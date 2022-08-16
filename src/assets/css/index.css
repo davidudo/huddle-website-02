@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+/* === General Styling === */
+
+/* === Colours === */
+:root {
+  /* === Primary === */
+  --pink: hsl(322, 100%, 66%);
+
+  /* === Neutral === */
+  --pale-cyan: hsl(193, 100%, 96%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --gray-blue: hsl(208, 11%, 55%);
+}
+
+/*body {
+  max-width: 320px;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 7rem;
+}
+
+button {
+  padding: 0.8rem 3rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p,
+a {
+  font-size: 16px;
+}
+
+
+/* ==== Header Styling === */
+
+header {
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-color: var(--pale-cyan);
+  padding-top: 2rem;
+  height: 100vh;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav button {
+  background-color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+nav button:hover {
+  color: var(--gray-blue);
+}
+
+header>div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 95%;
+}
+
+header>div>img {
+  width: 28rem;
+}
+
+/* ==== Hero Section === */
+
+.hero-section section {
+  width: 25rem;
+}
+
+.hero-section h1 {
+  font-size: 2rem;
+}
+
+.hero-section p {
+  margin: 1.5rem 0;
+}
+
+.hero-section button {
+  background-color: var(--pink);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-section button:hover {
+  background-color: hsl(322, 100%, 80%);
+}
+
+/* === Info Section Styling === */
+
+.info-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+  padding: 3rem 2rem 3rem 5rem;
+  border-radius: 20px;
+  margin-top: 4rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+main .info-section:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+.info-section p {
+  max-width: 20rem;
+  color: var(--gray-blue);
+  margin-top: 1rem;
+}
+
+.info-section img {
+  width: 20rem;
+}
+
+/* === CTA Styling === */
+
+.cta-container {
+  margin: 6rem auto -6rem auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  z-index: 0;
+}
+
+.cta-container button {
+  margin-top: 1.5rem;
+  background-color: var(--pink);
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 4rem;
+  cursor: pointer;
+}
+
+.cta-container button:hover {
+  background-color: hsl(322, 100%, 80%);
+}
+
+
+/* === Footer Styling === */
+
+footer {
+  background-color: var(--dark-cyan);
+  color: #fff;
+  padding: 10rem 0 5rem 0;
+}
+
+footer section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  gap: 5rem;
+}
+
+footer section div {
+  max-width: 300px;
+}
+
+footer p {
+  font-size: 13 px;
+  color: var(--pale-cyan);
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover {
+  text-decoration-line: underline;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-content img {
+  height: 12px;
+  margin-top: 4px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.socials i {
+  margin-right: 1rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.socials i:hover {
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+
+.copyright-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* === Mobile Design === */
+
+@media only screen and (max-width: 800px) {
+
+  /* === General Styling === */
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  /* === Header Section === */
+  header>div>img {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  header>div {
+    align-content: center;
+  }
+
+  /* === Hero Section === */
+  .hero-section {
+    text-align: center;
+  }
+
+  /* === Info Section === */
+  .info-section {
+    padding: 4rem 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+  }
+
+  main .info-section {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  main .info-section:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+
+  .info-section img {
+    width: 100%;
+  }
+
+  /* === CTA Section === */
+  .cta-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .cta-container button {
+    padding: 1rem 3rem;
+  }
+
+  /* === Footer Section === */
+  footer section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .socials {
+    margin: 0 auto;
+  }
+
+  .copyright-container {
+    justify-content: center;
+  }
+}
