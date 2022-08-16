@@ -281,8 +281,7 @@ footer a:hover {
   /* === Info Section === */
   .info-section {
     padding: 4rem 2rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    flex-direction: column;
     text-align: center;
   }
 
@@ -294,24 +293,27 @@ footer a:hover {
   main .info-section:nth-of-type(2) {
     flex-direction: column-reverse;
   }
-  
+    
   .info-section section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   .info-section p {
     max-width: 500px;
   }
 
   .info-section img {
-    max-width: 350px;
+    max-width: 250px;
   }
   
+  /* === CTA Section === */
+  
   .cta-container button {
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
+    font-size: 0.9rem;
   }
 
   /* === Footer Section === */
