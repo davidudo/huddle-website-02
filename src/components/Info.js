@@ -34,7 +34,7 @@ function Info() {
     <>
       {infoData.map((data) => {
         return (
-          <div key={data.id} className="container info-section">
+          <div key={data.id} className="info-section">
             <section>
               <h2>{data.title}</h2>
               <p>{data.content}</p>

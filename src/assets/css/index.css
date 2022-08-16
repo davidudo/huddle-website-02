@@ -295,10 +295,15 @@ footer a:hover {
     flex-direction: column-reverse;
   }
   
- .info-section p {
+  .info-section section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+  .info-section p {
     max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .info-section img {

@@ -3,7 +3,7 @@ import Cta from "./Cta";
 
 function Main() {
   return (
-    <main>
+    <main className="container">
       <Info />
       <Cta /> {/* Call To Action */}
     </main>
