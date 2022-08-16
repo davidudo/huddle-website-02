@@ -271,6 +271,12 @@ footer a:hover {
   .hero-section {
     text-align: center;
   }
+  
+  .hero-section section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   /* === Info Section === */
   .info-section {
@@ -291,12 +297,6 @@ footer a:hover {
 
   .info-section img {
     width: 100%;
-  }
-
-  /* === CTA Section === */
-  .cta-container {
-    margin-left: 1rem;
-    margin-right: 1rem;
   }
   
   .cta-container button {
